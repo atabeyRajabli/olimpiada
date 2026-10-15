@@ -1,4 +1,16 @@
-# Atabəy Rəcəbli landing page: launch checklist
+# Olympiad prep: course sign-up site
+
+**Live:** https://atabeyrajabli.github.io/olimpiada/
+
+The landing page for my informatics olympiad (RFO) prep course in Baku, written in Azerbaijani for parents. A one-minute quiz asks about the child's grade and experience and recommends the right group. The parent then sends me the result as a ready-made WhatsApp message, so every lead arrives already sorted.
+
+- **One file, no dependencies.** `index.html` holds the markup, styles, script and every image, so it loads fast on mobile data and hosts free on GitHub Pages.
+- **Deadline-aware.** The registration countdown is computed in Baku time on every visit. After the deadline the page switches to "registration closed" by itself and keeps taking messages for the next group.
+- **Built for phones.** It's tested inside Instagram's in-app browser, the back button closes the quiz instead of leaving the page, and the link preview image is set up for WhatsApp, Instagram and Telegram.
+- **No tracking.** There are no pixels or analytics. Conversions are counted from the prefilled message text.
+
+## Operating notes
+
 
 1. Create a public GitHub repo (e.g. `olimpiada`). Upload `index.html` and `og.jpg` to its root. Every page image is already inside `index.html`.
 2. Settings → Pages → Source "Deploy from a branch", branch `main`, folder `/ (root)`, Save. Live in 1-2 minutes at `https://<username>.github.io/olimpiada/`.
